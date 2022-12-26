@@ -1,19 +1,20 @@
-
-function reset(){
-    document.getElementById('tipdisplay').innerHTML = "";
-    document.getElementById('totaldisplay').innerHTML = "";
-}
-reset();
-
-function tip(value){
-    var amount = document.querySelector("#bill").value * value;
-    document.getElementById('tipdisplay').innerHTML = amount;
-}
-
-function tipcalculation(){
-    var bill = document.querySelector("#bill").value
-    var people = document.getElementById('person').value;
-    var tip = document.querySelector("#bill").value * value
-    var total = people * (tip + bill)
-    document.getElementById('totaldisplay').innerHTML = total;
-}
+function display(value) {
+    const bill_amt = document.querySelector("#input").value
+    const people = document.querySelector("#people").value
+ 
+    const tip = document.querySelector("#tip-amt").value = bill_amt * (value)/100 ;
+    console.log(tip)
+    const total = parseInt(tip) + parseInt(bill_amt)
+    console.log(total)
+           document.querySelector('#custom').value
+    
+     document.querySelector("#tip-total").value = total/people;
+ 
+ }
+ function reset(){
+     document.querySelector("#input").value=""
+     document.querySelector("#people").value =""
+     document.querySelector('#tip-amt').value =""
+     document.querySelector('#tip-total').value =""
+ }
+ 

@@ -1,29 +1,65 @@
-.container{
+#main-container{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(181, 231, 240);
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#container{
+    width: 870px;
+    height: 370px;
+    background-color: rgb(221, 228, 229);
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
     display: flex;
-    width: 50vw;
-    height: 50vh;
-    margin: 50px auto 0;
-    padding: 10px;
-    border: 2px solid rgb(90, 12, 186);
-    border-radius: 5%;
     flex-direction: row;
-    background: skyblue;
+   text-align: center;
+   padding: 10px;
+
 }
-.tip{
-    width: 40%;
-    height: 75%;
-    padding: 5%;
-    border: 2px solid burlywood;
-    border-radius: 5%;
-    box-shadow: violet;
-    background-color: cyan;
+ 
+#buttons{
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+
+    
 }
-.display{
-    width: 40%;
-    height: 75%;
-    padding: 5%;
-    border: 2px solid burlywood;
-    border-radius: 5%;
-    box-shadow: violet;
-    background: gainsboro;
+#input, #people, #amt, #total{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+#custom{
+    width: 26%;
+    border-radius: 5px;
+}
+#tip-amount{
+    background-color: rgb(170, 163, 195);
+    width: 50%;
+    border-radius: 5px;
+}
+.btn{
+    width: 30%; 
+    background:  rgb(30, 182, 182) ;
+   height: 40px;
+   border-radius: 5px;
+
+}
+#tip-amount{
+    padding: 50px;
+}
+#total, #amt, #reset{
+    width: 80%; 
+    height: 40px; 
+    border-radius: 5px;
+    margin: 30px;
 }
